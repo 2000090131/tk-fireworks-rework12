@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import FireworksBackground from '@/components/animations/FireworksBackground';
+import ConfettiBurst from '@/components/animations/ConfettiBurst';
+import SoundToggle from '@/components/common/SoundToggle';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
