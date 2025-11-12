@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useState } from 'react';
 
 const SoundToggle: React.FC = () => {
-  const { t } = useTranslation();
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0.5);
 
