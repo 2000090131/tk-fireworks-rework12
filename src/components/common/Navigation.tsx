@@ -64,43 +64,40 @@ const Navigation: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-300 hover:text-yellow-400"
+            className="md:hidden text-3xl text-yellow-400 hover:scale-110 transition-transform wiggle p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle mobile menu"
           >
-            <div className="space-y-1">
-              <div className={`w-6 h-0.5 bg-current transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></div>
-              <div className={`w-6 h-0.5 bg-current transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`}></div>
-              <div className={`w-6 h-0.5 bg-current transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></div>
-            </div>
+            {isMobileMenuOpen ? '❌' : '🍔'}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-700">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden py-6 border-t border-purple-500/30 bg-black/80 backdrop-blur-sm">
+            <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`px-4 py-2 rounded-lg transition-colors font-medium ${
+                  className={`fun-card px-4 py-3 rounded-xl transition-all font-bold text-lg hover:scale-105 ${
                     isActiveLink(item.path)
-                      ? 'bg-yellow-400/20 text-yellow-400'
-                      : 'text-gray-300 hover:bg-gray-700/50 hover:text-yellow-400'
+                      ? 'bg-yellow-400/30 text-yellow-400 rainbow-border'
+                      : 'text-gray-300 hover:bg-purple-600/30 hover:text-yellow-400'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
+                  <span className="mr-3 text-2xl wiggle">{item.emoji}</span>
                   {item.label}
                 </Link>
               ))}
               <Link
                 to="/cart"
-                className="px-4 py-2 btn btn-secondary flex items-center justify-center"
+                className="btn btn-fun flex items-center justify-center px-4 py-3 text-lg"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <span className="mr-2">🛒</span>
-                {t('navigation.cart')}
+                <span className="mr-3 text-2xl wiggle">🛒</span>
+                Shopping Cart
               </Link>
             </div>
           </div>
