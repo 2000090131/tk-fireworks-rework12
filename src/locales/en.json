@@ -1,0 +1,132 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "aiRecommender": "AI Fireworks Helper",
+    "safety": "Safety Tips",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "common": {
+    "brandName": "TK Fireworks",
+    "tagline": "Light Up Your Celebrations with AI-Powered Fireworks",
+    "learnMore": "Learn More",
+    "watchVideos": "Watch Product Videos",
+    "enquireNow": "Enquire Now",
+    "buyNow": "Buy Now",
+    "loading": "Loading...",
+    "search": "Search",
+    "searchPlaceholder": "Search for fireworks...",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us"
+  },
+  "home": {
+    "heroTitle": "Welcome to TK Fireworks",
+    "heroSubtitle": "India's First AI-Powered Fireworks Brand",
+    "heroDescription": "Discover the magic of premium quality fireworks with AI-powered recommendations for your perfect celebration.",
+    "trendingProducts": "Trending Products",
+    "whyChooseUs": "Why Choose TK Fireworks?",
+    "qualityTitle": "Premium Quality",
+    "qualityDescription": "Highest quality materials and manufacturing standards for safe, spectacular shows.",
+    "aiTitle": "AI-Powered",
+    "aiDescription": "Get personalized fireworks recommendations based on your celebration needs.",
+    "safetyTitle": "Safety First",
+    "safetyDescription": "All products meet international safety standards with clear usage guidelines."
+  },
+  "about": {
+    "title": "About TK Fireworks",
+    "brandStoryTitle": "Our Story",
+    "brandStoryDescription": "For over three decades, TK Fireworks has been illuminating celebrations across India with premium quality fireworks that bring joy and excitement to every occasion.",
+    "missionTitle": "Our Mission",
+    "missionDescription": "To revolutionize the fireworks industry in India with innovative AI-powered solutions that help customers find the perfect fireworks for their celebrations while maintaining the highest safety standards.",
+    "visionTitle": "Our Vision",
+    "visionDescription": "To be India's most trusted fireworks brand, combining traditional craftsmanship with modern technology to create unforgettable celebration experiences."
+  },
+  "products": {
+    "title": "Our Products",
+    "description": "Explore our complete range of premium fireworks for every occasion.",
+    "categories": "Categories",
+    "sortBy": "Sort By",
+    "filterBy": "Filter By",
+    "viewDetails": "View Details",
+    "noProductsFound": "No products found matching your criteria.",
+    "categories": {
+      "fountains": "Fountains",
+      "rockets": "Rockets",
+      "sparklers": "Sparklers",
+      "chakras": "Chakras",
+      "bombs": "Bombs",
+      "fancy": "Fancy Items",
+      "combo": "Combo Packs"
+    }
+  },
+  "productDetail": {
+    "specifications": "Specifications",
+    "safetyInfo": "Safety Information",
+    "recommendedAge": "Recommended Age",
+    "duration": "Duration",
+    "height": "Height",
+    "similarProducts": "Similar Products",
+    "share": "Share",
+    "addToCart": "Add to Cart"
+  },
+  "aiRecommender": {
+    "title": "AI Fireworks Helper",
+    "subtitle": "Let me help you find the perfect fireworks!",
+    "welcome": "Hi! I'm your AI assistant. I'll help you choose the perfect fireworks for your celebration.",
+    "question1": "What's the occasion?",
+    "question2": "How many people will be attending?",
+    "question3": "What's your budget range?",
+    "question4": "Any age restrictions?",
+    "getRecommendations": "Get Recommendations",
+    "restart": "Start Over"
+  },
+  "safety": {
+    "title": "Safety Tips",
+    "subtitle": "Safety First, Celebration Second",
+    "generalRules": "General Safety Rules",
+    "adultSupervision": "Always have adult supervision for children",
+    "outdoorOnly": "Use fireworks only in open outdoor areas",
+    "waterSource": "Keep water source nearby",
+    "noAlcohol": "Avoid alcohol when handling fireworks",
+    "readInstructions": "Read all instructions carefully",
+    "emergencyNumber": "Emergency Helpline: 108"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "formName": "Full Name",
+    "formEmail": "Email Address",
+    "formPhone": "Phone Number",
+    "formMessage": "Message",
+    "submit": "Send Message",
+    "address": "Our Address",
+    "phone": "Phone",
+    "email": "Email",
+    "businessHours": "Business Hours"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "item": "Item",
+    "price": "Price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to Checkout",
+    "continueShopping": "Continue Shopping"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "categories": "Categories",
+    "customerService": "Customer Service",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "copyright": "© 2024 TK Fireworks. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}
