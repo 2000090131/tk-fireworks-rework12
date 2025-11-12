@@ -1,0 +1,265 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* TK Fireworks color variables */
+:root {
+  /* Primary brand colors */
+  --tk-red: #FF3B30;
+  --tk-orange: #FF6B35;
+  --tk-yellow: #FFD23F;
+  --tk-gold: #FFA500;
+
+  /* Secondary colors */
+  --tk-dark-blue: #1A1A2E;
+  --tk-light-blue: #16213E;
+  --tk-purple: #6A1B9A;
+  --tk-pink: #E91E63;
+
+  /* Neutral colors */
+  --tk-white: #FFFFFF;
+  --tk-gray-light: #F5F5F5;
+  --tk-gray: #757575;
+  --tk-dark: #212121;
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --text-accent: var(--tk-yellow);
+
+  /* Background colors */
+  --bg-primary: #000000;
+  --bg-secondary: #1A1A2E;
+  --bg-card: rgba(26, 26, 46, 0.8);
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Typography */
+  --font-primary: 'Poppins', sans-serif;
+  --font-festive: 'Baloo Bhai 2', cursive;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 2rem;
+
+  /* Shadows */
+  --shadow-glow: 0 0 20px rgba(255, 107, 53, 0.6);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 8px 30px rgba(255, 107, 53, 0.4);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--tk-yellow);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: var(--tk-orange);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: var(--text-primary);
+}
+
+.festive-text {
+  font-family: var(--font-festive);
+  color: var(--tk-yellow);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--tk-yellow);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--tk-orange);
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-primary);
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, var(--tk-red), var(--tk-orange));
+  color: var(--tk-white);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--tk-yellow);
+  border: 2px solid var(--tk-yellow);
+}
+
+.btn-secondary:hover {
+  background: var(--tk-yellow);
+  color: var(--tk-dark);
+}
+
+/* Loading and animations */
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tk-orange);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tk-red);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
