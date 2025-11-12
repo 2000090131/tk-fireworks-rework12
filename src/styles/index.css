@@ -393,6 +393,39 @@ a:hover {
   background: linear-gradient(135deg, rgba(255, 23, 68, 0.2), rgba(255, 109, 0, 0.2), rgba(255, 234, 0, 0.2));
 }
 
+/* Rainbow border animation */
+.rainbow-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 23, 68, 0.1), rgba(255, 109, 0, 0.1), rgba(255, 234, 0, 0.1));
+  border-radius: var(--radius-xl);
+}
+
+.rainbow-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: var(--bg-rainbow);
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: subtract;
+  animation: rainbow 3s linear infinite;
+}
+
+/* Additional fun animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
