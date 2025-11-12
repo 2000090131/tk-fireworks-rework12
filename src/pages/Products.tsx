@@ -1,11 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
 import ConfettiBurst from '@/components/animations/ConfettiBurst';
-import LoadingSpinner from '@/components/animations/LoadingSpinner';
 
 const Products: React.FC = () => {
-  const { t } = useTranslation();
+  const t = (key: string) => key; // Simple translation function for now
 
   const products = [
     { id: 1, emoji: '🎆', name: 'Super Sky Rocket', color: 'Red', price: '₹299', fun: 'Goes super high! 🚀' },
