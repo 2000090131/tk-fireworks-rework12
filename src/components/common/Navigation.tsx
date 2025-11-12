@@ -8,12 +8,12 @@ const Navigation: React.FC = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: '/', label: t('navigation.home') },
-    { path: '/about', label: t('navigation.about') },
-    { path: '/products', label: t('navigation.products') },
-    { path: '/ai-recommender', label: t('navigation.aiRecommender') },
-    { path: '/safety', label: t('navigation.safety') },
-    { path: '/contact', label: t('navigation.contact') },
+    { path: '/', label: '🏠 Home', emoji: '🏠' },
+    { path: '/about', label: '📖 About', emoji: '📖' },
+    { path: '/products', label: '🎆 Products', emoji: '🎆' },
+    { path: '/ai-recommender', label: '🤖 AI Helper', emoji: '🤖' },
+    { path: '/safety', label: '🛡️ Safety', emoji: '🛡️' },
+    { path: '/contact', label: '📞 Contact', emoji: '📞' },
   ];
 
   const isActiveLink = (path: string) => {
