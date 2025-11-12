@@ -62,7 +62,7 @@ const ConfettiBurst: React.FC<ConfettiBurstProps> = ({ children, className = '' 
         </div>
       ))}
 
-      <style jsx>{`
+      <style>{`
         @keyframes confetti-burst {
           0% {
             transform: translateX(0) translateY(0) scale(1);
