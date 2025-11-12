@@ -57,17 +57,32 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* TK Fireworks color variables */
+/* TK Fireworks Kids-Friendly color variables */
 :root {
-  /* Primary brand colors */
-  --tk-red: #FF3B30;
-  --tk-orange: #FF6B35;
-  --tk-yellow: #FFD23F;
-  --tk-gold: #FFA500;
+  /* Primary brand colors - more vibrant for kids */
+  --tk-red: #FF1744;
+  --tk-orange: #FF6D00;
+  --tk-yellow: #FFEA00;
+  --tk-gold: #FFC107;
+  --tk-lime: #76FF03;
+  --tk-green: #00E676;
+  --tk-teal: #1DE9B6;
+  --tk-cyan: #00E5FF;
+  --tk-blue: #2979FF;
+  --tk-purple: #D500F9;
+  --tk-pink: #FF4081;
+
+  /* Rainbow colors for fun effects */
+  --rainbow-1: #FF0000;
+  --rainbow-2: #FF7F00;
+  --rainbow-3: #FFFF00;
+  --rainbow-4: #00FF00;
+  --rainbow-5: #0000FF;
+  --rainbow-6: #8B00FF;
 
   /* Secondary colors */
-  --tk-dark-blue: #1A1A2E;
-  --tk-light-blue: #16213E;
+  --tk-dark-blue: #1A237E;
+  --tk-light-blue: #3949AB;
   --tk-purple: #6A1B9A;
   --tk-pink: #E91E63;
 
@@ -82,10 +97,11 @@ h6 {
   --text-secondary: #B0B0B0;
   --text-accent: var(--tk-yellow);
 
-  /* Background colors */
+  /* Background colors - more colorful */
   --bg-primary: #000000;
   --bg-secondary: #1A1A2E;
   --bg-card: rgba(26, 26, 46, 0.8);
+  --bg-rainbow: linear-gradient(45deg, var(--rainbow-1), var(--rainbow-2), var(--rainbow-3), var(--rainbow-4), var(--rainbow-5), var(--rainbow-6));
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -99,17 +115,20 @@ h6 {
   /* Typography */
   --font-primary: 'Poppins', sans-serif;
   --font-festive: 'Baloo Bhai 2', cursive;
+  --font-fun: 'Comic Sans MS', cursive, sans-serif;
 
-  /* Border radius */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-  --radius-xl: 2rem;
+  /* Border radius - more playful */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+  --radius-round: 50%;
 
-  /* Shadows */
-  --shadow-glow: 0 0 20px rgba(255, 107, 53, 0.6);
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
-  --shadow-hover: 0 8px 30px rgba(255, 107, 53, 0.4);
+  /* Shadows - more colorful */
+  --shadow-glow: 0 0 30px rgba(255, 107, 53, 0.8);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 12px 40px rgba(255, 107, 53, 0.6);
+  --shadow-rainbow: 0 0 40px rgba(255, 0, 255, 0.5);
 }
 
 /* Typography */
